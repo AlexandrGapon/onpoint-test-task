@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.app {
+    position: relative;
+    width: 1024px;
+    height: 768px;
+}
+
+.logo {
+    position: absolute;
+    left: 70px;
+    bottom: 15px;
+    width: 60px;
+    height: 13px;
+    z-index: 100;
+}
+
+.sliderList {
+    overflow: hidden;
+}
+
+.sliderTrack {
+    height: 768px;
+    width: 3072px;
+    display: flex;
+    flex-direction: row;
+}

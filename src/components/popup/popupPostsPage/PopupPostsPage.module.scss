@@ -1,0 +1,39 @@
+.container {
+    position: absolute;
+    top: 210px;
+    left: 210px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popupPost {
+    animation-name: emergence;
+    animation-timing-function: linear;
+    animation-duration: .4s;
+}
+
+.popupPost > .postNumber {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #8cc9e8;
+}
+
+.popupPost > .postBody {
+    font-family: 'DINPro', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #2e2e2e;
+}
+
+@keyframes emergence {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

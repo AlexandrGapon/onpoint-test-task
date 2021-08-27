@@ -1,0 +1,128 @@
+.container {
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    background: no-repeat center/cover url('../../imgs/message_page/bg.jpg');
+}
+
+.title {
+    position: absolute;
+    top: 135px;
+    left: 70px;
+}
+
+.title > p {
+    font-family:'DINPro', sans-serif;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.scrollBarContainer {
+    position: absolute;
+    top: 240px;
+    left: 80px;
+}
+
+.scrollBar {
+    width: 5px;
+    height: 445px;
+    border-radius: 3px;
+    background-color: black;
+}
+
+.scrollBarIcon {
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    width: 20px;
+    height: 105px;
+    background: no-repeat center/100% url('../../imgs/message_page/scrollbar_icon.png');
+}
+
+.messageContainer {
+    position: absolute;
+    top: 240px;
+    right: 130px;
+    padding: 30px;
+    background: #fff;
+    width: 775px;
+    height: 445px;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.messageBody {
+    background: transparent;
+    color: #000;
+    font-family:'MyriadPro', sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.image1 {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 660px;
+    animation-name: emergence;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: .7s;
+}
+
+.image2 {
+    position: absolute;
+    top: 95px;
+    right: 0;
+    width: 440px;
+    animation-name: emergence;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: .7s;
+}
+
+.image3 {
+    position: absolute;
+    top: 80px;
+    right: 45px;
+    width: 270px;
+    animation-name: emergence;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-delay: .7s;
+}
+
+.image4 {
+    position: absolute;
+    top: 420px;
+    right: 0;
+    width: 135px;
+    animation-name: emergence;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: .7s;
+}
+
+.image5 {
+    position: absolute;
+    top: 530px;
+    right: 0;
+    width: 135px;
+    animation-name: emergence;
+    animation-duration: 1.4s;
+    animation-timing-function: linear;
+    animation-delay: .7s;
+}
+
+@keyframes emergence {
+    from {
+        opacity: 0;
+        transform: translate(40px, 40px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0)
+    }
+}

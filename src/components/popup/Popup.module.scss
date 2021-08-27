@@ -1,0 +1,85 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 39, 62, .7);
+    animation-name: emergence;
+    animation-timing-function: linear;
+    animation-duration: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 125px;
+    left: 140px;
+    width: 825px;
+    height: 575px;
+    background-color: #fff;
+    border-radius: 35px;
+    z-index: 10;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;    
+    width: 35px;
+    height: 35px;
+    background: no-repeat center/100% url('../../imgs/popup/close_btn.png');
+}
+
+.titleContainer {
+    position: absolute;
+    top: 45px;
+    left: 210px;
+}
+
+.titleContainer > p {
+    font-family: 'DINPro', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titleContainer > .brand {
+    font-size: 95px;
+    letter-spacing: 5px;
+    margin-left: -9px;
+}
+
+.popupPage {
+    position: absolute;
+    top: 210px;
+    left: 210px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popupPost > .postNumber {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #8cc9e8;
+}
+
+.popupPost > .postBody {
+    font-family: 'DINPro', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #2e2e2e;
+}
+
+@keyframes emergence {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}

@@ -1,0 +1,51 @@
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.prevBtn {
+    width: 10px;
+    height: 15px;
+    margin-right: 15px;
+    background: no-repeat center/100% url('../../imgs/pagination/prev_btn.png');
+}
+
+.nextBtn {
+    width: 10px;
+    height: 15px;
+    margin-left: 15px;
+    background: no-repeat center/100% url('../../imgs/pagination/next_btn.png');
+}
+
+.paginationItem {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: emergence;
+    animation-timing-function: linear;
+    animation-duration: .3s;
+}
+
+.active {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #fc6da9;
+    animation-name: emergence;
+    animation-timing-function: linear;
+    animation-duration: .3s;
+}
+
+@keyframes emergence {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
