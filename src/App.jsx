@@ -21,7 +21,7 @@ const App = () => {
   const [styleTrack, setStyleTrack] = useState({ transform: 'translateX(0px)' })
 
   // functions
-  const slide = (slide) => {
+  const swipe = (slide) => {
     setStyleTrack({
       ...styleTrack,
       transition: 'transform .5s',
@@ -30,7 +30,7 @@ const App = () => {
   }
 
   const goSlide = (slideIndex) => {
-    slide(slideIndex)
+    swipe(slideIndex)
     setSlideIndex(slideIndex)
   }
 
@@ -72,17 +72,17 @@ const App = () => {
     if (Math.abs(posInit - posX1) > 350) {
       if (posInit < posX1 && slideIndex > 0 && posInit !== posX1) {
         setSlideIndex(slideIndex - 1)
-        slide(slideIndex - 1)
+        swipe(slideIndex - 1)
         return
       }
       if (posInit > posX1 && slideIndex < 2 && posInit !== posX1) {
         setSlideIndex(slideIndex + 1)
-        slide(slideIndex + 1)
+        swipe(slideIndex + 1)
         return
       }
     }
     if (posInit !== posX1) {
-      slide(slideIndex)
+      swipe(slideIndex)
     }
   }
 
