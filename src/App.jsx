@@ -92,8 +92,8 @@ const App = () => {
         position={{ top: '25px', left: '70px' }}
         click={goSlide}
       />
-      <div className={styles.sliderList}>
-        <div className={styles.sliderTrack} style={styleTrack}>
+      <div className={styles.swiperList}>
+        <div className={styles.swiperTrack} style={styleTrack}>
           <HomePage nextSlide={goSlide} />
           <MessagePage />
           <BrandPage />
