@@ -39,8 +39,7 @@ const BrandPage = () => {
             </div>
             <PinkBtn char={plusIcon}
                 position={{ bottom: '125px', right: '80px' }}
-                click={setPopup}
-                clickValue={true}
+                onClick={() => setPopup(true)}
             >
                 Подробнее
             </PinkBtn>

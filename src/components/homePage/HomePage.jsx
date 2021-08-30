@@ -25,8 +25,7 @@ const HomePage = ({ nextSlide }) => {
             </div>
             <PinkBtn char={arrowIcon}
                 position={{ bottom: '235px', right: '110px' }}
-                click={nextSlide}
-                clickValue={1}
+                onClick={() => nextSlide(1)}
             >
                 Что дальше?
             </PinkBtn>

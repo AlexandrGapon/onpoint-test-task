@@ -3,9 +3,9 @@ import styles from './HomeBtn.module.scss'
 
 // В кнопку передаем позицию в качестве объекта с полями top/bottom right/left
 
-const HomeBtn = ({ position, click }) => {
+const HomeBtn = ({ position, ...props }) => {
     return (
-        <div className={styles.homeBtn} style={position} onClick={() => click(0)}>
+        <div className={styles.homeBtn} style={position} {...props}>
         </div>
     )
 }

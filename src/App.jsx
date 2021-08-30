@@ -90,7 +90,7 @@ const App = () => {
     <div className={styles.app} onTouchStart={start} onTouchMove={action} onTouchEnd={end}>
       <HomeBtn
         position={{ top: '25px', left: '70px' }}
-        click={goSlide}
+        onClick={() => {goSlide(0)}}
       />
       <div className={styles.swiperList}>
         <div className={styles.swiperTrack} style={styleTrack}>
